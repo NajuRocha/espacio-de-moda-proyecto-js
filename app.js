@@ -153,6 +153,9 @@ function enviarDatosCliente() {
       console.log(JSON.parse(enJSON));
 
       location.reload();
+      alert(
+        "Su pedido ha sido procesado. En la brevedad se le enviara un mail."
+      );
     } else {
       formulario.reset();
     }
@@ -163,7 +166,7 @@ enviarDatosCliente();
 
 renderCardCursos();
 
-verificarUsuario();
+//verificarUsuario();
 
 //-------------------------------------------------
 

@@ -36,14 +36,14 @@ h1 {
 }
 
 #carrito-imagen {
+  cursor: pointer;
   width: 4rem;
-  padding: 10px;
+  padding: 5px;
   background-color: #f9caa7;
 }
-
-#nombreCurso {
-  margin-bottom: 3rem;
-  font-size: 2rem;
+#carrito-imagen:hover {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
 }
 
 .lista-cursos {
@@ -90,6 +90,12 @@ h1 {
   color: #fff;
   background-color: black;
   font-size: 1.2rem;
+  /*Transicion de Bootstrap*/
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.botones:hover {
+  background: rgb(87, 87, 87);
 }
 
 #cursos-seleccionados {
@@ -113,12 +119,17 @@ h1 {
 }
 
 .btn-primary {
+  font-size: 1.2rem;
   background-color: black;
   border: black;
   border-radius: 5px;
   display: none;
+  width: 100%;
 }
 .btn-primary:hover {
+  background: rgb(87, 87, 87);
+}
+.btn-primary:focus {
   background-color: black;
 }
 
@@ -144,6 +155,54 @@ h1 {
   color: #fff;
   padding: 1rem;
   margin-bottom: 1rem;
+}
+
+/*---------------MODAL--------------------*/
+
+.modal-content {
+  background: #f9caa7;
+  padding: 1rem;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  box-shadow: 7px 13px 37px #000;
+}
+.modal-content h5 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.modal-header {
+  border-bottom: 0px;
+}
+.modal-body input {
+  width: 100%;
+  background: #ffffff;
+  padding: 0.7rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  border: 1px solid #000000;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+}
+.modal-body p {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+.modal-footer {
+  border-top: 2px solid #000000;
+}
+.modal-footer button {
+  font-size: 1.2rem;
+  width: 100%;
+  background: #000000;
+  border: none;
+  color: white;
+  margin: 1rem 0 0 0;
+}
+.modal-footer button:hover {
+  background: rgb(87, 87, 87);
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/
@@ -172,7 +231,7 @@ h1 {
   margin: 0 0 2rem 0;
 }
 
-ul {
+li {
   font-size: 1.5rem;
 }
 

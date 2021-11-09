@@ -107,7 +107,7 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title">Carrito</h5>
+                <h5 class="modal-title">Informacion de pago</h5>
                 <button
                   type="button"
                   class="btn-close"
@@ -116,45 +116,54 @@
                 ></button>
               </div>
               <div class="modal-body">
-                <p>Informacion de pago.</p>
                 <form action="" method="post" id="formulario">
-                  <ul>
-                    <li>
-                      <label for="name">Nombre:</label>
-                      <input type="text" id="name" name="user_name" required />
-                    </li>
-                    <li>
-                      <label for="mail">Correo electrónico:</label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="user_mail"
-                        required
-                      />
-                    </li>
-                    <li>
-                      <label for="dni">Numero de DNI:</label>
-                      <input type="number" id="dni" name="user_dni" required />
-                    </li>
-                    <li>
-                      <label for="tel">Teléfono:</label>
-                      <input type="number" id="tel" name="user_tel" required />
-                    </li>
-                  </ul>
+                  <input
+                    type="text"
+                    id="name"
+                    name="user_name"
+                    placeholder="Nombre y Apellido"
+                    required
+                  />
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="user_mail"
+                    placeholder="Correo electrónico"
+                    required
+                  />
+
+                  <input
+                    type="number"
+                    id="tel"
+                    name="user_tel"
+                    placeholder="Numero de Celular"
+                    required
+                  />
+
+                  <input
+                    type="number"
+                    id="dni"
+                    name="user_dni"
+                    placeholder="DNI"
+                    required
+                  />
+
+                  <p>Una vez confirmados los datos, se enviara un mail.</p>
                   <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Cerrar
-                    </button>
                     <button
                       type="submit"
                       id="enviar-datos"
                       class="btn btn-primary"
                     >
                       Enviar
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cerrar
                     </button>
                   </div>
                 </form>
