@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "nombre": "Modelaje",
+    "icon": "./imagenes/modelaje.PNG",
+    "duracion": "2 meses",
+    "precio": 7000,
+    "modalidad": "2 clases por semana"
+  },
+  {
+    "id": 2,
+    "nombre": "Auto-maquillaje",
+    "icon": "./imagenes/auto-maquillaje.PNG",
+    "duracion": "1 mes",
+    "precio": 4000,
+    "modalidad": "2 clases por semana"
+  },
+  {
+    "id": 3,
+    "nombre": "Costura",
+    "icon": "./imagenes/costura.PNG",
+    "duracion": "6 meses",
+    "precio": 12000,
+    "modalidad": "3 clases por semana"
+  },
+  {
+    "id": 4,
+    "nombre": "Diseño de indumentaria",
+    "icon": "./imagenes/diseño.PNG",
+    "duracion": "4 meses",
+    "precio": 10000,
+    "modalidad": "3 clases por semana"
+  },
+  {
+    "id": 5,
+    "nombre": "Modelaje Teens",
+    "icon": "./imagenes/modelaje-teen.PNG",
+    "duracion": "2 meses",
+    "precio": 6000,
+    "modalidad": "2 clases por semana"
+  },
+  {
+    "id": 6,
+    "nombre": "Fotografía",
+    "icon": "./imagenes/fotografia.PNG",
+    "duracion": "1 meses",
+    "precio": 3000,
+    "modalidad": "1 clases por semana"
+  }
+]

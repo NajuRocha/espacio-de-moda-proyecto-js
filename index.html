@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Alta costura, moda, venta, textil, Juliana Rocha, colecciones, preguntas, Monte Grande, prendas, Pʀᴇ̂ᴛ ᴀ̀ Pᴏʀᴛᴇʀ, Cursos, capacitación"
+    />
+    <meta name="author" content="Rocha Nahuel Nicolas" />
+    <meta
+      name="description"
+      content="Venta de prendas en alta costura y Pʀᴇ̂ᴛ ᴀ̀ Pᴏʀᴛᴇʀ - Cursos y capacitación de moda."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Tangerine&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap"
+      rel="stylesheet"
+    />
+    <title>JULIANA ROCHA ESPACIO DE MODA | Cursos</title>
+    <link rel="icon" href="imagenes/favicon.ico" />
+  </head>
+  <body id="body">
+    <div id="usuario"></div>
+
+    <!-------------------------------------- HEADER -------------------------------------->
+
+    <header>
+      <div>
+        <img src="imagenes/logo.PNG" alt="logo" class="logo" />
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-black">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link link" aria-current="page" href="#">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link" href="#">COLECCIONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link" href="#">GALERIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link" href="#">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link" href="#">SOBRE MI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link" href="#">CURSOS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!---------------------------------Carrito------------------------------------>
+        <div id="carrito">
+          <img
+            src="imagenes/carrito.png"
+            alt="carrito de compras"
+            id="carrito-imagen"
+          />
+        </div>
+      </nav>
+    </header>
+
+    <!------------------------------------ SECTION ------------------------------------->
+
+    <section id="section">
+      <!------------------------------------Modal---------------------------------------->
+      <div>
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Carrito</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>Informacion de pago.</p>
+                <form action="" method="post" id="formulario">
+                  <ul>
+                    <li>
+                      <label for="name">Nombre:</label>
+                      <input type="text" id="name" name="user_name" required />
+                    </li>
+                    <li>
+                      <label for="mail">Correo electrónico:</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="user_mail"
+                        required
+                      />
+                    </li>
+                    <li>
+                      <label for="dni">Numero de DNI:</label>
+                      <input type="number" id="dni" name="user_dni" required />
+                    </li>
+                    <li>
+                      <label for="tel">Teléfono:</label>
+                      <input type="number" id="tel" name="user_tel" required />
+                    </li>
+                  </ul>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                    <button
+                      type="submit"
+                      id="enviar-datos"
+                      class="btn btn-primary"
+                    >
+                      Enviar
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="lista-productos">
+          <table class="tabla-carrito">
+            <tr>
+              <th>Nombre</th>
+              <th>Precio</th>
+            </tr>
+          </table>
+          <p id="total">Total:</p>
+
+          <!-----------------------------------------Boton Modal-------------------------------->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Terminar compra
+          </button>
+        </div>
+
+        <div id="lista-cursos" class="lista-cursos">
+          <h1 class="titulo">ESPACIO DE MODA | JULIANA ROCHA</h1>
+          <h2>Lista de cursos</h2>
+          <div id="estilos-card"></div>
+          <div id="cursos-seleccionados"></div>
+        </div>
+
+        <!-------------------------------Preguntas generales/Relleno------------------------------->
+        <div id="contacto">
+          <div class="contacto-contenedor">
+            <div class="preguntas">
+              <h1 class="titulo-preguntas">Preguntas generales:</h1>
+              <p>
+                Despeja tus dudas rápidamente, aquí encontrarás todo lo
+                relacionado a nuestra modalidad de trabajo y consultas que nos
+                hacen nuestros clientes y recomendaciones.
+              </p>
+              <h2>¿Qué medios de pago utilizan?</h2>
+              <p>Acordamos una vez nos contactemos. Estos pueden ser:</p>
+              <ul class="preguntas-lista">
+                <li>Transferencia bancaria</li>
+                <li>Efectivo</li>
+                <li>Tarjetas de crédito</li>
+              </ul>
+              <h2>¿Qué otros servicios pueden brindar?</h2>
+              <p>
+                Somos Diseñadores y especialistas en tendencias, y diseñamos
+                Indumentaria con tu estilo para algún evento especial.
+              </p>
+              <h2>¿Donde nos encontramos?</h2>
+              <p>
+                Nos encontramos en Nicolás Avellaneda 866, Monte Grande, Buenos
+                Aires.
+              </p>
+              <p>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.0794770406983!2d-58.46482264863892!3d-34.8039422755315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3d5f731831b%3A0xd9c102f70661f7a!2sNicol%C3%A1s%20Avellaneda%20866%2C%20B1842DQR%20Monte%20Grande%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1628729889173!5m2!1ses-419!2sar"
+                  width="100%"
+                  height="250"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </p>
+            </div>
+          </div>
+          <div class="consultas-wp">
+            <div class="caja-consultas-wp">
+              <h3 class="h3-consultas">Contactanos por Whatsapp</h3>
+              <p class="mensaje-consultas-wp">
+                Tambien puedes solicitar una entrevista por este medio SIN
+                CARGO. Ya sea para capacitacion, o para traernos diseño
+                personalizado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------------------- FOOTER -------------------------------------->
+    <footer class="pie">
+      <div class="pie-gris">
+        <div>
+          <h4>@Copyright - Todos los derechos reservados</h4>
+        </div>
+        <div class="link-footer">
+          <a
+            href="https://www.instagram.com/julianarochaespaciodemoda/?hl=es-la"
+            ><img src="imagenes/instagram.svg" height="30px" width="30px"
+          /></a>
+          <a href="https://www.facebook.com/JulianaRochaEspaciodeModa"
+            ><img src="imagenes/facebook.svg" height="30px" width="30px"
+          /></a>
+          <a href="https://api.whatsapp.com/send?phone=5491159526683"
+            ><img src="imagenes/whatsapp.svg" height="30px" width="30px"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

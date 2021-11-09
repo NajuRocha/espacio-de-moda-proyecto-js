@@ -1,0 +1,287 @@
+#section {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+#contenedor {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#curso {
+  background-color: cornflowerblue;
+  color: black;
+  padding: 2rem 5rem 5rem 5rem;
+  margin: 5rem;
+  border: 5px;
+  border-radius: 5px;
+}
+p {
+  font-size: 1.5rem;
+}
+h1 {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#carrito {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#carrito-imagen {
+  width: 4rem;
+  padding: 10px;
+  background-color: #f9caa7;
+}
+
+#nombreCurso {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.lista-cursos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#estilos-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 85%;
+}
+
+.card-curso {
+  text-align: center;
+  width: 24rem;
+  background-color: #f9caa7;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagenes {
+  justify-content: center;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 10px;
+}
+
+.color-caja {
+  background-color: #ffa866;
+}
+
+.botones {
+  border: none;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: black;
+  font-size: 1.2rem;
+}
+
+#cursos-seleccionados {
+  background-color: #f9caa7;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/*-------------carrito----------*/
+#lista-productos {
+  padding: 1rem;
+  right: 0;
+  position: absolute;
+  background-color: #ffa866;
+  width: 25vw;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: black;
+  border: black;
+  border-radius: 5px;
+  display: none;
+}
+.btn-primary:hover {
+  background-color: black;
+}
+
+.item-cart {
+  font-size: 1.2rem;
+  background-color: #f9caa7;
+  border: 1px solid #030303;
+  padding: 8px;
+}
+
+.tabla-carrito {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+/*------------LocalStorage-------------*/
+#usuario {
+  background-color: rgb(87, 87, 87);
+}
+.add-usuario {
+  text-align: end;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------Consultas----------------------------*/
+
+#contacto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.contacto-contenedor {
+  margin: 2rem;
+  border-radius: 5px;
+  background-color: rgba(238, 179, 125, 0.2);
+  padding: 1rem;
+  border-left: solid 5px;
+  border-color: black;
+}
+.preguntas {
+  margin: 1rem 2rem;
+}
+.titulo-preguntas {
+  margin: 0 0 2rem 0;
+}
+
+ul {
+  font-size: 1.5rem;
+}
+
+.consultas-wp {
+  background-image: url(imagenes/bg-consultas.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caja-consultas-wp {
+  width: 55%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5;
+  padding: 5rem;
+}
+.h3-consultas {
+  font-size: 2.5rem;
+}
+.mensaje-consultas-wp {
+  text-align: center;
+  margin: 2rem;
+  width: 80%;
+}
+
+/*-------------------------------HEADER--------------------------*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div .logo {
+  width: 6rem;
+  margin: 0.3rem;
+  flex: 1;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  margin-bottom: 0rem;
+  background-color: #f9caa7;
+}
+
+.navbar-toggler {
+  background-color: rgb(0, 0, 0);
+}
+
+.navbar-nav {
+  display: flex;
+  padding-left: 0;
+}
+.nav-item {
+  border-radius: 10px;
+  cursor: pointer;
+  list-style: none;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+.nav-item:hover {
+  color: #fff;
+}
+
+.link {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+}
+.link:hover {
+  color: #fff !important;
+  background-color: black;
+}
+
+/*-------------------------------FOOTER--------------------------------*/
+.pie {
+  color: black;
+  display: block;
+}
+.pie-gris {
+  height: auto;
+  background-color: rgb(128, 128, 128);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.link-footer a {
+  margin: 2rem;
+}
+.link-footer img {
+  width: 3rem;
+  height: 3rem;
+}
